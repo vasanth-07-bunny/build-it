@@ -46,7 +46,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Gitleaks
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         env:
           # No paid license needed for public/OSS hackathon repos.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

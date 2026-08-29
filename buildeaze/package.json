@@ -1,0 +1,28 @@
+{
+  "name": "buildeaze",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Universal hackathon AI orchestration & readiness platform — plug in any AI planner, any build engine, get one quality/security/accessibility score before you ship.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.3.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@types/node": "20.14.15",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@playwright/test": "^1.62.1",
+    "@axe-core/playwright": "^4.10.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

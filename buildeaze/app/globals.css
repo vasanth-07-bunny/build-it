@@ -1,0 +1,66 @@
+/* ============================================================
+   BuildEaze design tokens
+   Palette: night-shift control panel — deep charcoal-navy base,
+   phosphor-amber signal, teal for pass, coral for fail.
+   Type: monospace for labels/data (this IS a console), a plain
+   humanist sans for reading prose.
+   ============================================================ */
+
+:root {
+  --bg: #12141c;
+  --surface: #1a1d29;
+  --surface-raised: #212433;
+  --line: #2c2f40;
+
+  --text: #f0eee6;
+  --text-muted: #8b8fa3;
+
+  --amber: #ffb84d;
+  --amber-dim: #7a5b26;
+  --teal: #5eead4;
+  --coral: #ff6b6b;
+
+  --mono: ui-monospace, 'IBM Plex Mono', 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+  --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image: linear-gradient(180deg, #14161f 0%, #12141c 320px);
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--amber-dim);
+  color: var(--text);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

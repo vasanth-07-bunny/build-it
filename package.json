@@ -19,7 +19,7 @@
     "@types/node": "20.14.15",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@playwright/test": "^1.62.1",
+    "@playwright/test": "^1.63.0",
     "@axe-core/playwright": "^4.10.0"
   },
   "engines": {
